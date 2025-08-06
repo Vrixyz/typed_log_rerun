@@ -1,0 +1,13 @@
+[package]
+name = "typed_log_rerun"
+version = "0.1.0"
+edition = "2024"
+description = "Generic rerun logging capabilities to reduce boilerplate. Designed for `typed_log` crate ecosystem."
+license = "MIT OR Apache-2.0"
+keywords = ["rerun", "log"]
+repository = "https://github.com/Vrixyz/typed_log_rerun"
+documentation = "https://docs.rs/typed_log_rerun"
+
+[dependencies]
+rerun = "0.23"
+typed_log = "0.1.0"
