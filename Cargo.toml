@@ -1,6 +1,6 @@
 [package]
 name = "typed_log_rerun"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Generic rerun logging capabilities to reduce boilerplate. Designed for `typed_log` crate ecosystem."
 license = "MIT OR Apache-2.0"
