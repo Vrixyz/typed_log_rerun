@@ -10,4 +10,7 @@ documentation = "https://docs.rs/typed_log_rerun"
 
 [dependencies]
 rerun = "0.23"
-typed_log = "0.1.0"
+typed_log = "0.1.1"
+
+[patch.crates-io]
+# typed_log = { path = "../typed_log" }

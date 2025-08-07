@@ -1,6 +1,6 @@
 pub static RERUN_LOGGER: RerunLogger = RerunLogger;
 
-use std::sync::atomic::AtomicU32;
+use std::{any::TypeId, sync::atomic::AtomicU32};
 
 use typed_log::Loggable;
 
@@ -29,10 +29,18 @@ pub fn get_rr() -> &'static rerun::RecordingStream {
 }
 
 pub struct IncrementTime(pub u32);
-impl Loggable for IncrementTime {}
+impl Loggable for IncrementTime {
+    fn type_id(&self) -> std::any::TypeId {
+        TypeId::of::<Self>()
+    }
+}
 
 pub struct Clear(pub String);
-impl Loggable for Clear {}
+impl Loggable for Clear {
+    fn type_id(&self) -> std::any::TypeId {
+        TypeId::of::<Self>()
+    }
+}
 
 /// Increases the time of "main" rerun timeline
 pub fn incr_main_time(increment: &IncrementTime) {
