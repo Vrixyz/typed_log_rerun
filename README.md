@@ -8,4 +8,4 @@ This crate leverages `typed_log` to delegate rerun logging implementation to the
 
 ## Simple example
 
-![https://github.com/user-attachments/assets/ccc36a15-3dce-4e96-bc25-2664223b7269]
+https://github.com/user-attachments/assets/ccc36a15-3dce-4e96-bc25-2664223b7269
