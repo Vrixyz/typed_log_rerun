@@ -8076,7 +8076,7 @@ checksum = "70d632e35e239244db8dabaa7e96f78cbd28665d60233f98cb9765f86d34d832"
 
 [[package]]
 name = "typed_log_rerun"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "rerun",
  "typed_log",
